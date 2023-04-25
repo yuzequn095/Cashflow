@@ -13,6 +13,7 @@
 		9AFA213829F76A9C0070BA3E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9AFA213729F76A9C0070BA3E /* Preview Assets.xcassets */; };
 		9AFA213F29F770ED0070BA3E /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AFA213E29F770ED0070BA3E /* Extensions.swift */; };
 		9AFA214129F899E40070BA3E /* TransactionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AFA214029F899E40070BA3E /* TransactionModel.swift */; };
+		9AFA214329F89C580070BA3E /* PreviewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AFA214229F89C580070BA3E /* PreviewData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		9AFA213729F76A9C0070BA3E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9AFA213E29F770ED0070BA3E /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		9AFA214029F899E40070BA3E /* TransactionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionModel.swift; sourceTree = "<group>"; };
+		9AFA214229F89C580070BA3E /* PreviewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				9AFA213729F76A9C0070BA3E /* Preview Assets.xcassets */,
+				9AFA214229F89C580070BA3E /* PreviewData.swift */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -143,6 +146,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9AFA214329F89C580070BA3E /* PreviewData.swift in Sources */,
 				9AFA214129F899E40070BA3E /* TransactionModel.swift in Sources */,
 				9AFA213329F76A9B0070BA3E /* ContentView.swift in Sources */,
 				9AFA213F29F770ED0070BA3E /* Extensions.swift in Sources */,

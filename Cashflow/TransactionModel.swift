@@ -9,6 +9,7 @@ import Foundation
 
 struct Transaction: Identifiable {
     let id: Int
+    let account: String
     let date: String
     let amount: Double
     let category: String
