@@ -14,6 +14,7 @@
 		9AFA213F29F770ED0070BA3E /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AFA213E29F770ED0070BA3E /* Extensions.swift */; };
 		9AFA214129F899E40070BA3E /* TransactionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AFA214029F899E40070BA3E /* TransactionModel.swift */; };
 		9AFA214329F89C580070BA3E /* PreviewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AFA214229F89C580070BA3E /* PreviewData.swift */; };
+		9AFA214529F89D990070BA3E /* TransactionRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AFA214429F89D990070BA3E /* TransactionRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		9AFA213E29F770ED0070BA3E /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		9AFA214029F899E40070BA3E /* TransactionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionModel.swift; sourceTree = "<group>"; };
 		9AFA214229F89C580070BA3E /* PreviewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewData.swift; sourceTree = "<group>"; };
+		9AFA214429F89D990070BA3E /* TransactionRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 			children = (
 				9AFA213029F76A9B0070BA3E /* CashflowApp.swift */,
 				9AFA213229F76A9B0070BA3E /* ContentView.swift */,
+				9AFA214429F89D990070BA3E /* TransactionRow.swift */,
 				9AFA214029F899E40070BA3E /* TransactionModel.swift */,
 				9AFA213E29F770ED0070BA3E /* Extensions.swift */,
 				9AFA213429F76A9C0070BA3E /* Assets.xcassets */,
@@ -149,6 +152,7 @@
 				9AFA214329F89C580070BA3E /* PreviewData.swift in Sources */,
 				9AFA214129F899E40070BA3E /* TransactionModel.swift in Sources */,
 				9AFA213329F76A9B0070BA3E /* ContentView.swift in Sources */,
+				9AFA214529F89D990070BA3E /* TransactionRow.swift in Sources */,
 				9AFA213F29F770ED0070BA3E /* Extensions.swift in Sources */,
 				9AFA213129F76A9B0070BA3E /* CashflowApp.swift in Sources */,
 			);
