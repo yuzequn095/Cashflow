@@ -17,6 +17,14 @@ struct Transaction: Identifiable {
     let detail: String
     let memo: String
     let type: TransactionType.RawValue
+    
+    var dateParsed: Date {
+        date.dateParsed()
+    }
+    
+    var signedAmount: Double {
+        return type == TransactionType.credit.rawValue ? amount : -amount
+    }
 }
 
 enum TransactionType: String {
