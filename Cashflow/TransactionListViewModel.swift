@@ -34,9 +34,9 @@ final class TransactionListViewModel: ObservableObject { // Subscribe and refres
                 
                 return data
             }
-            .decode(type: [Transaction].self, decoder: JSONDecoder()) // Decode to JSON format
-            .receive(on: DispatchQueue.main) // Update on UI
-            .sink{ completion in
+            .decode(type: [Transaction].self, decoder: JSONDecoder()) // Convert JSON data to an array of transaction
+            .receive(on: DispatchQueue.main) // Switch back to the main thread -> update UI
+            .sink{ completion in // handle data task result
                 switch  completion {
                 case .failure(let error):
                     print("Error fetching transactions: ", error.localizedDescription)

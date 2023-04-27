@@ -17,6 +17,7 @@
 		9AFA214529F89D990070BA3E /* TransactionRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AFA214429F89D990070BA3E /* TransactionRow.swift */; };
 		9AFA214829F8A5BF0070BA3E /* SwiftUIFontIcon in Frameworks */ = {isa = PBXBuildFile; productRef = 9AFA214729F8A5BF0070BA3E /* SwiftUIFontIcon */; };
 		9AFA214A29F9EBCD0070BA3E /* TransactionListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AFA214929F9EBCD0070BA3E /* TransactionListViewModel.swift */; };
+		9AFA214C29FA3B840070BA3E /* RecentTransactionList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AFA214B29FA3B840070BA3E /* RecentTransactionList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		9AFA214229F89C580070BA3E /* PreviewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewData.swift; sourceTree = "<group>"; };
 		9AFA214429F89D990070BA3E /* TransactionRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionRow.swift; sourceTree = "<group>"; };
 		9AFA214929F9EBCD0070BA3E /* TransactionListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionListViewModel.swift; sourceTree = "<group>"; };
+		9AFA214B29FA3B840070BA3E /* RecentTransactionList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentTransactionList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 				9AFA213229F76A9B0070BA3E /* ContentView.swift */,
 				9AFA214429F89D990070BA3E /* TransactionRow.swift */,
 				9AFA214929F9EBCD0070BA3E /* TransactionListViewModel.swift */,
+				9AFA214B29FA3B840070BA3E /* RecentTransactionList.swift */,
 				9AFA214029F899E40070BA3E /* TransactionModel.swift */,
 				9AFA213E29F770ED0070BA3E /* Extensions.swift */,
 				9AFA213429F76A9C0070BA3E /* Assets.xcassets */,
@@ -161,6 +164,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9AFA214329F89C580070BA3E /* PreviewData.swift in Sources */,
+				9AFA214C29FA3B840070BA3E /* RecentTransactionList.swift in Sources */,
 				9AFA214129F899E40070BA3E /* TransactionModel.swift in Sources */,
 				9AFA213329F76A9B0070BA3E /* ContentView.swift in Sources */,
 				9AFA214529F89D990070BA3E /* TransactionRow.swift in Sources */,
