@@ -8,6 +8,8 @@
 import Foundation
 import Combine
 
+typealias TransactionGroup = [String: [Transaction]]
+
 final class TransactionListViewModel: ObservableObject { // Subscribe and refresh as content
     // @Published - send notification to subscriber when data changes
     @Published var transactions: [Transaction] = [] // Empty array as the default value
@@ -48,5 +50,13 @@ final class TransactionListViewModel: ObservableObject { // Subscribe and refres
                 dump(self?.transactions)
             }
             .store(in: &cancellables)
+    }
+    
+    func groupTransactionsByMonth() -> TransactionGroup {
+        guard !transactions.isEmpty else { return [:] }
+        
+        let groupedTransactions = TransactionGroup(grouping: transactions) { $0.month }
+        
+        return groupedTransactions
     }
 }
