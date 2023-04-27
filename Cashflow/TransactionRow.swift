@@ -24,10 +24,11 @@ struct TransactionRow: View {
             
             VStack(alignment: .leading, spacing: 6) {
                 // Transaction Detail
-                Text(transaction.detail)
+                Text(transaction.merchant) // should be changed as detail later
                     .font(.subheadline)
                     .bold()
                     .lineLimit(1)
+                
                 // Transaction Category
                 Text(transaction.category)
                     .font(.footnote)

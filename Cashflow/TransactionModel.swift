@@ -7,7 +7,8 @@
 
 import Foundation
 
-struct Transaction: Identifiable {
+struct Transaction: Identifiable, Decodable {
+    /*
     let id: Int
     let account: String
     let date: String
@@ -17,6 +18,21 @@ struct Transaction: Identifiable {
     let detail: String
     let memo: String
     let type: TransactionType.RawValue
+    */
+    
+    let id: Int
+    let date: String
+    let institution: String
+    let account: String
+    var merchant: String
+    let amount: Double
+    let type: TransactionType.RawValue
+    var categoryId: Int
+    var category: String
+    let isPending: Bool
+    var isTransfer: Bool
+    var isExpense: Bool
+    var isEdited: Bool
     
     var dateParsed: Date {
         date.dateParsed()
