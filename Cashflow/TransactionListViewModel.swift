@@ -19,12 +19,15 @@ final class TransactionListViewModel: ObservableObject { // Subscribe and refres
     private var cancellables = Set<AnyCancellable>() // An activity or action supports cancellation
     
     init() {
-        getTransactions()
+        // getTransactions()
+        transactions = transactionListPreviewData
     }
     
     func getTransactions() {
         // guard - early return
-        guard let url = URL(string: "https://designcode.io/data/transactions.json") else {
+        var cor_url: String = "https://designcode.io/data/transactions.json"
+        var inc_url: String = "random.url"
+        guard let url = URL(string: inc_url) else {
             print("Invalid URL")
             return
         }
@@ -49,6 +52,7 @@ final class TransactionListViewModel: ObservableObject { // Subscribe and refres
                 }
             } receiveValue: { [weak self] result in // weak self - release memory when necessary
                 self?.transactions = result
+                dump("fetching data")
                 dump(self?.transactions)
             }
             .store(in: &cancellables)
@@ -63,7 +67,7 @@ final class TransactionListViewModel: ObservableObject { // Subscribe and refres
     }
     
     func accumulateTransactions() -> TransactionPrefixSum {
-        print("accumulateTransactions")
+        // print("accumulateTransactions")
         guard !transactions.isEmpty else { return [] }
         
         let today = "12/31/2022".dateParsed() // Date() // ??? why one year less

@@ -21,12 +21,14 @@ struct ContentView: View {
                         .font(.title2)
                         .bold()
                     
+                    /* TODO
                     // Chart
                     let data = transactionListVM.accumulateTransactions()
                     
                     if !data.isEmpty {
                         
                         let totalExpenses = data.last?.1 ?? 0
+                        
                         
                         CardView {
                             VStack(alignment: .leading) {
@@ -39,7 +41,10 @@ struct ContentView: View {
                         .chartStyle(ChartStyle(backgroundColor: Color.systemBackground,
                                                foregroundColor: ColorGradient(Color.icon.opacity(0.4), Color.icon)))
                         .frame(height: 300)
+                         
                     }
+                    */
+                    
                     // Transacion List
                     RecentTransactionList()
                 }
@@ -51,7 +56,8 @@ struct ContentView: View {
             .toolbar {
                 // Notification Icon
                 ToolbarItem{
-                    Image(systemName: "bell.badge")
+                    Image(systemName: "plus")
+                        .frame(width: 45, height: 45)
                         .symbolRenderingMode(.palette)
                         .foregroundStyle(Color.icon, .primary)
                 }
