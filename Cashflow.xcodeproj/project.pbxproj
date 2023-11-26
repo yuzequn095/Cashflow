@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9A69C36A2B12EE2B00E3B848 /* TranscationCreationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A69C3692B12EE2B00E3B848 /* TranscationCreationView.swift */; };
 		9AFA213129F76A9B0070BA3E /* CashflowApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AFA213029F76A9B0070BA3E /* CashflowApp.swift */; };
 		9AFA213329F76A9B0070BA3E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AFA213229F76A9B0070BA3E /* ContentView.swift */; };
 		9AFA213529F76A9C0070BA3E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9AFA213429F76A9C0070BA3E /* Assets.xcassets */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9A69C3692B12EE2B00E3B848 /* TranscationCreationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranscationCreationView.swift; sourceTree = "<group>"; };
 		9AFA212D29F76A9B0070BA3E /* Cashflow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cashflow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AFA213029F76A9B0070BA3E /* CashflowApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CashflowApp.swift; sourceTree = "<group>"; };
 		9AFA213229F76A9B0070BA3E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 				9AFA213E29F770ED0070BA3E /* Extensions.swift */,
 				9AFA213429F76A9C0070BA3E /* Assets.xcassets */,
 				9AFA213629F76A9C0070BA3E /* Preview Content */,
+				9A69C3692B12EE2B00E3B848 /* TranscationCreationView.swift */,
 			);
 			path = Cashflow;
 			sourceTree = "<group>";
@@ -176,6 +179,7 @@
 			files = (
 				9AFA214329F89C580070BA3E /* PreviewData.swift in Sources */,
 				9AFA214E29FB2B6B0070BA3E /* TransactionList.swift in Sources */,
+				9A69C36A2B12EE2B00E3B848 /* TranscationCreationView.swift in Sources */,
 				9AFA214C29FA3B840070BA3E /* RecentTransactionList.swift in Sources */,
 				9AFA214129F899E40070BA3E /* TransactionModel.swift in Sources */,
 				9AFA213329F76A9B0070BA3E /* ContentView.swift in Sources */,

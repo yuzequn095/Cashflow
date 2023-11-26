@@ -13,6 +13,8 @@ struct CashflowApp: App {
     @StateObject var transactionListVM = TransactionListViewModel()
     
     var body: some Scene {
+        // People can open more than one window from the group simultaneously
+        // Every window in the group maintains independent state
         WindowGroup {
             ContentView()
                 .environmentObject(transactionListVM)
