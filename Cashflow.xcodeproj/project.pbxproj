@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		9A69C36A2B12EE2B00E3B848 /* TranscationCreationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A69C3692B12EE2B00E3B848 /* TranscationCreationView.swift */; };
+		9AAC8B6D2BA80B3A0012CCA7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9AAC8B6C2BA80B3A0012CCA7 /* GoogleService-Info.plist */; };
+		9AAC8B702BA80D110012CCA7 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 9AAC8B6F2BA80D110012CCA7 /* FirebaseAnalytics */; };
+		9AAC8B722BA80D110012CCA7 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = 9AAC8B712BA80D110012CCA7 /* FirebaseAnalyticsOnDeviceConversion */; };
+		9AAC8B742BA80D110012CCA7 /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 9AAC8B732BA80D110012CCA7 /* FirebaseAnalyticsSwift */; };
+		9AAC8B762BA80D110012CCA7 /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */ = {isa = PBXBuildFile; productRef = 9AAC8B752BA80D110012CCA7 /* FirebaseAnalyticsWithoutAdIdSupport */; };
+		9AAC8B782BA80D110012CCA7 /* FirebaseAppCheck in Frameworks */ = {isa = PBXBuildFile; productRef = 9AAC8B772BA80D110012CCA7 /* FirebaseAppCheck */; };
+		9AAC8B7A2BA8113B0012CCA7 /* test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AAC8B792BA8113B0012CCA7 /* test.swift */; };
 		9AFA213129F76A9B0070BA3E /* CashflowApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AFA213029F76A9B0070BA3E /* CashflowApp.swift */; };
 		9AFA213329F76A9B0070BA3E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AFA213229F76A9B0070BA3E /* ContentView.swift */; };
 		9AFA213529F76A9C0070BA3E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9AFA213429F76A9C0070BA3E /* Assets.xcassets */; };
@@ -26,6 +33,8 @@
 
 /* Begin PBXFileReference section */
 		9A69C3692B12EE2B00E3B848 /* TranscationCreationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranscationCreationView.swift; sourceTree = "<group>"; };
+		9AAC8B6C2BA80B3A0012CCA7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		9AAC8B792BA8113B0012CCA7 /* test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test.swift; sourceTree = "<group>"; };
 		9AFA212D29F76A9B0070BA3E /* Cashflow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cashflow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AFA213029F76A9B0070BA3E /* CashflowApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CashflowApp.swift; sourceTree = "<group>"; };
 		9AFA213229F76A9B0070BA3E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -45,8 +54,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9AAC8B782BA80D110012CCA7 /* FirebaseAppCheck in Frameworks */,
+				9AAC8B742BA80D110012CCA7 /* FirebaseAnalyticsSwift in Frameworks */,
 				9AFA215429FB37710070BA3E /* SwiftUICharts in Frameworks */,
 				9AFA215129FB35FB0070BA3E /* Collections in Frameworks */,
+				9AAC8B722BA80D110012CCA7 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */,
+				9AAC8B762BA80D110012CCA7 /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */,
+				9AAC8B702BA80D110012CCA7 /* FirebaseAnalytics in Frameworks */,
 				9AFA214829F8A5BF0070BA3E /* SwiftUIFontIcon in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -54,6 +68,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9AAC8B6A2BA807D40012CCA7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9A69C3692B12EE2B00E3B848 /* TranscationCreationView.swift */,
+				9AFA213229F76A9B0070BA3E /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9AAC8B6B2BA8097C0012CCA7 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
 		9AFA212429F76A9A0070BA3E = {
 			isa = PBXGroup;
 			children = (
@@ -73,8 +103,10 @@
 		9AFA212F29F76A9B0070BA3E /* Cashflow */ = {
 			isa = PBXGroup;
 			children = (
+				9AAC8B6C2BA80B3A0012CCA7 /* GoogleService-Info.plist */,
+				9AAC8B6B2BA8097C0012CCA7 /* Database */,
+				9AAC8B6A2BA807D40012CCA7 /* Views */,
 				9AFA213029F76A9B0070BA3E /* CashflowApp.swift */,
-				9AFA213229F76A9B0070BA3E /* ContentView.swift */,
 				9AFA214429F89D990070BA3E /* TransactionRow.swift */,
 				9AFA214929F9EBCD0070BA3E /* TransactionListViewModel.swift */,
 				9AFA214B29FA3B840070BA3E /* RecentTransactionList.swift */,
@@ -83,7 +115,7 @@
 				9AFA213E29F770ED0070BA3E /* Extensions.swift */,
 				9AFA213429F76A9C0070BA3E /* Assets.xcassets */,
 				9AFA213629F76A9C0070BA3E /* Preview Content */,
-				9A69C3692B12EE2B00E3B848 /* TranscationCreationView.swift */,
+				9AAC8B792BA8113B0012CCA7 /* test.swift */,
 			);
 			path = Cashflow;
 			sourceTree = "<group>";
@@ -117,6 +149,11 @@
 				9AFA214729F8A5BF0070BA3E /* SwiftUIFontIcon */,
 				9AFA215029FB35FB0070BA3E /* Collections */,
 				9AFA215329FB37710070BA3E /* SwiftUICharts */,
+				9AAC8B6F2BA80D110012CCA7 /* FirebaseAnalytics */,
+				9AAC8B712BA80D110012CCA7 /* FirebaseAnalyticsOnDeviceConversion */,
+				9AAC8B732BA80D110012CCA7 /* FirebaseAnalyticsSwift */,
+				9AAC8B752BA80D110012CCA7 /* FirebaseAnalyticsWithoutAdIdSupport */,
+				9AAC8B772BA80D110012CCA7 /* FirebaseAppCheck */,
 			);
 			productName = Cashflow;
 			productReference = 9AFA212D29F76A9B0070BA3E /* Cashflow.app */;
@@ -150,6 +187,7 @@
 				9AFA214629F8A5BF0070BA3E /* XCRemoteSwiftPackageReference "SwiftUIFontIcon" */,
 				9AFA214F29FB35FB0070BA3E /* XCRemoteSwiftPackageReference "swift-collections" */,
 				9AFA215229FB37710070BA3E /* XCRemoteSwiftPackageReference "ChartView" */,
+				9AAC8B6E2BA80D110012CCA7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			productRefGroup = 9AFA212E29F76A9B0070BA3E /* Products */;
 			projectDirPath = "";
@@ -167,6 +205,7 @@
 			files = (
 				9AFA213829F76A9C0070BA3E /* Preview Assets.xcassets in Resources */,
 				9AFA213529F76A9C0070BA3E /* Assets.xcassets in Resources */,
+				9AAC8B6D2BA80B3A0012CCA7 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -187,6 +226,7 @@
 				9AFA213F29F770ED0070BA3E /* Extensions.swift in Sources */,
 				9AFA214A29F9EBCD0070BA3E /* TransactionListViewModel.swift in Sources */,
 				9AFA213129F76A9B0070BA3E /* CashflowApp.swift in Sources */,
+				9AAC8B7A2BA8113B0012CCA7 /* test.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,7 +368,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = dev.zequn.Cashflow;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.zequn.cashflow;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -357,7 +397,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = dev.zequn.Cashflow;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.zequn.cashflow;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -389,6 +429,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		9AAC8B6E2BA80D110012CCA7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.22.1;
+			};
+		};
 		9AFA214629F8A5BF0070BA3E /* XCRemoteSwiftPackageReference "SwiftUIFontIcon" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/huybuidac/SwiftUIFontIcon";
@@ -416,6 +464,31 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		9AAC8B6F2BA80D110012CCA7 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9AAC8B6E2BA80D110012CCA7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		9AAC8B712BA80D110012CCA7 /* FirebaseAnalyticsOnDeviceConversion */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9AAC8B6E2BA80D110012CCA7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsOnDeviceConversion;
+		};
+		9AAC8B732BA80D110012CCA7 /* FirebaseAnalyticsSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9AAC8B6E2BA80D110012CCA7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsSwift;
+		};
+		9AAC8B752BA80D110012CCA7 /* FirebaseAnalyticsWithoutAdIdSupport */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9AAC8B6E2BA80D110012CCA7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsWithoutAdIdSupport;
+		};
+		9AAC8B772BA80D110012CCA7 /* FirebaseAppCheck */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9AAC8B6E2BA80D110012CCA7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAppCheck;
+		};
 		9AFA214729F8A5BF0070BA3E /* SwiftUIFontIcon */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 9AFA214629F8A5BF0070BA3E /* XCRemoteSwiftPackageReference "SwiftUIFontIcon" */;
