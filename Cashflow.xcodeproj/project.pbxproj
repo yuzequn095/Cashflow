@@ -7,14 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9A38ACF52BD4FA7A00A136B8 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A38ACF42BD4FA7A00A136B8 /* MainView.swift */; };
 		9A69C36A2B12EE2B00E3B848 /* TranscationCreationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A69C3692B12EE2B00E3B848 /* TranscationCreationView.swift */; };
-		9AAC8B6D2BA80B3A0012CCA7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9AAC8B6C2BA80B3A0012CCA7 /* GoogleService-Info.plist */; };
 		9AAC8B702BA80D110012CCA7 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 9AAC8B6F2BA80D110012CCA7 /* FirebaseAnalytics */; };
 		9AAC8B722BA80D110012CCA7 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = 9AAC8B712BA80D110012CCA7 /* FirebaseAnalyticsOnDeviceConversion */; };
 		9AAC8B742BA80D110012CCA7 /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 9AAC8B732BA80D110012CCA7 /* FirebaseAnalyticsSwift */; };
 		9AAC8B762BA80D110012CCA7 /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */ = {isa = PBXBuildFile; productRef = 9AAC8B752BA80D110012CCA7 /* FirebaseAnalyticsWithoutAdIdSupport */; };
 		9AAC8B782BA80D110012CCA7 /* FirebaseAppCheck in Frameworks */ = {isa = PBXBuildFile; productRef = 9AAC8B772BA80D110012CCA7 /* FirebaseAppCheck */; };
-		9AAC8B7A2BA8113B0012CCA7 /* test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AAC8B792BA8113B0012CCA7 /* test.swift */; };
 		9AFA213129F76A9B0070BA3E /* CashflowApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AFA213029F76A9B0070BA3E /* CashflowApp.swift */; };
 		9AFA213329F76A9B0070BA3E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AFA213229F76A9B0070BA3E /* ContentView.swift */; };
 		9AFA213529F76A9C0070BA3E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9AFA213429F76A9C0070BA3E /* Assets.xcassets */; };
@@ -32,9 +31,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9A38ACF42BD4FA7A00A136B8 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		9A69C3692B12EE2B00E3B848 /* TranscationCreationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranscationCreationView.swift; sourceTree = "<group>"; };
-		9AAC8B6C2BA80B3A0012CCA7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
-		9AAC8B792BA8113B0012CCA7 /* test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test.swift; sourceTree = "<group>"; };
 		9AFA212D29F76A9B0070BA3E /* Cashflow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cashflow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AFA213029F76A9B0070BA3E /* CashflowApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CashflowApp.swift; sourceTree = "<group>"; };
 		9AFA213229F76A9B0070BA3E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -73,6 +71,7 @@
 			children = (
 				9A69C3692B12EE2B00E3B848 /* TranscationCreationView.swift */,
 				9AFA213229F76A9B0070BA3E /* ContentView.swift */,
+				9A38ACF42BD4FA7A00A136B8 /* MainView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -103,7 +102,6 @@
 		9AFA212F29F76A9B0070BA3E /* Cashflow */ = {
 			isa = PBXGroup;
 			children = (
-				9AAC8B6C2BA80B3A0012CCA7 /* GoogleService-Info.plist */,
 				9AAC8B6B2BA8097C0012CCA7 /* Database */,
 				9AAC8B6A2BA807D40012CCA7 /* Views */,
 				9AFA213029F76A9B0070BA3E /* CashflowApp.swift */,
@@ -115,7 +113,6 @@
 				9AFA213E29F770ED0070BA3E /* Extensions.swift */,
 				9AFA213429F76A9C0070BA3E /* Assets.xcassets */,
 				9AFA213629F76A9C0070BA3E /* Preview Content */,
-				9AAC8B792BA8113B0012CCA7 /* test.swift */,
 			);
 			path = Cashflow;
 			sourceTree = "<group>";
@@ -205,7 +202,6 @@
 			files = (
 				9AFA213829F76A9C0070BA3E /* Preview Assets.xcassets in Resources */,
 				9AFA213529F76A9C0070BA3E /* Assets.xcassets in Resources */,
-				9AAC8B6D2BA80B3A0012CCA7 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,10 +219,10 @@
 				9AFA214129F899E40070BA3E /* TransactionModel.swift in Sources */,
 				9AFA213329F76A9B0070BA3E /* ContentView.swift in Sources */,
 				9AFA214529F89D990070BA3E /* TransactionRow.swift in Sources */,
+				9A38ACF52BD4FA7A00A136B8 /* MainView.swift in Sources */,
 				9AFA213F29F770ED0070BA3E /* Extensions.swift in Sources */,
 				9AFA214A29F9EBCD0070BA3E /* TransactionListViewModel.swift in Sources */,
 				9AFA213129F76A9B0070BA3E /* CashflowApp.swift in Sources */,
-				9AAC8B7A2BA8113B0012CCA7 /* test.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

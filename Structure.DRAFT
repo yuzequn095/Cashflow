@@ -1,0 +1,41 @@
+ExpenseTrackerApp/
+├── App.swift                       // Main application entry point
+├── Resources/
+│   ├── Assets.xcassets             // Image assets, app icon, etc.
+│   └── Localizable.strings         // Localization strings
+├── Models/
+│   ├── ExpenseItem.swift           // Model for an expense item
+│   └── User.swift                  // Model for a user
+├── Views/
+│   ├── MainView.swift              // Root view of the app
+│   ├── ExpenseListView.swift       // View for listing expenses
+│   ├── ExpenseDetailView.swift     // View for displaying expense details
+│   ├── AddExpenseView.swift        // View for adding a new expense
+│   └── Components/                 // Reusable components
+│       ├── ExpenseItemRow.swift    // Custom row for an expense item
+│       └── HeaderView.swift        // A reusable header view
+├── ViewModels/
+│   ├── ExpenseListViewModel.swift  // ViewModel for the expense list view
+│   └── AddExpenseViewModel.swift   // ViewModel for adding a new expense
+├── Services/
+│   ├── AuthenticationService.swift // Manages user authentication
+│   └── ExpenseService.swift        // Handles data fetching and manipulation of expenses
+├── Networking/
+│   ├── APIManager.swift            // Centralized API management
+│   └── Endpoints.swift             // API endpoint definitions
+├── Database/
+│   ├── PersistenceController.swift // Core Data persistence controller
+│   └── Models/                     // CoreData models, if needed
+├── Extensions/
+│   ├── Color+Extensions.swift      // Color extensions for app theme
+│   └── Date+Extensions.swift       // Date formatting extensions
+├── Utils/                          // Utility classes and functions
+│   ├── Constants.swift             // App-wide constants
+│   └── Helpers.swift               // Helper functions
+├── Supporting Files/
+│   ├── Info.plist                  // App configuration file
+│   └── Preview Content/            // SwiftUI previews content
+└── Tests/
+    ├── ExpenseTrackerAppTests/     // Unit tests
+    └── ExpenseTrackerAppUITests/   // UI tests
+

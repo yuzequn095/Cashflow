@@ -21,8 +21,8 @@ class AppDelegate: NSObject, UIApplicationDelegate {
 
 @main
 struct CashflowApp: App {
-    // @StateObject - follow the life cycle of the app
     @StateObject var transactionListVM = TransactionListViewModel()
+    @State private var isUserLoggedIn = false; // set default login value as false
     
     // register app delegate for Firebase setup
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
@@ -33,6 +33,12 @@ struct CashflowApp: App {
         WindowGroup {
 //           ContentView()
 //                .environmentObject(transactionListVM)
+            if isUserLoggedIn {
+                // Redirect logged in user to MainView
+                MainView()
+            } else {
+                // LoginView
+            }
         }
     }
 }
