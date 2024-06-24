@@ -7,11 +7,10 @@
 
 import Foundation
 
-struct ExpenseItem: Identifiable, Codable {
+struct ExpenseItem: Identifiable {
     var id = UUID()
-    var date: Date
+    var name: String
     var amount: Double
-    var category: String
-    var type: String
-    var detail: String
+    var date: Date
+    var isExpense: Bool // True for expense, False for income
 }

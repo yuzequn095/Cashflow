@@ -9,9 +9,18 @@ import SwiftUI
 
 @main
 struct CashFlowDevApp: App {
+    @StateObject private var authService = AuthenticationService()
+    
     var body: some Scene {
         WindowGroup {
-            MainView()
+            if authService.isUserLoggedIn {
+                MainView()
+                    .environmentObject(authService) // Pass authService to MainView
+            }
+            else {
+                AuthenticationView()
+                    .environmentObject(authService) // Pass authService to AuthenticationView
+            }
         }
     }
 }
